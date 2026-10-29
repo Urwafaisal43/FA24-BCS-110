@@ -62,10 +62,9 @@ The website was tested at:
 - product.html
 - checkout.html
 - style.css
-
-## Tools
--chatgpt
--claude
-
 - script.js
 - images/
+
+  ## Tools
+-chatgpt
+-claude
