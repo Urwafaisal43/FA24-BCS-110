@@ -1118,3 +1118,92 @@ font-size: 10px;
         text-decoration: none;
     }
 }
+
+/* MIDTERM TASK 2 */
+
+.checkout-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.checkout-page h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.checkout-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.checkout-form fieldset {
+    border: 1px solid #ccc;
+    padding: 25px;
+}
+
+.checkout-form legend {
+    font-size: 22px;
+    font-weight: bold;
+    color: hsl(70, 70%, 45%);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.form-row input,
+.form-row select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #888;
+}
+
+.form-row small {
+    grid-column: 2;
+}
+
+.checkout-button {
+    grid-column: 1 / -1;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: black;
+    color: white;
+}
+
+
+/* invalid field after user interaction */
+
+.form-row input:user-invalid,
+.form-row select:user-invalid {
+    border: 2px solid red;
+}
+
+
+@media (max-width: 609px) {
+
+    .checkout-form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row small {
+        grid-column: 1;
+    }
+
+    .checkout-button {
+        grid-column: 1;
+    }
+}
+.checkout-link {
+    color: white;
+}
