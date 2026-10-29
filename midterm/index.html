@@ -29,9 +29,10 @@
 <div class="right-icons">
 <i class="bi bi-search"></i>
 <i class="bi bi-person"></i>
-<a href="checkout.html" class="checkout-link">
+<div class="cart-icon" id="cartIcon">
     <i class="bi bi-bag"></i>
-</a>
+    <span id="cartCount">0</span>
+</div>
 </div>
 
 </div>
@@ -159,6 +160,24 @@
 </div>
 
 </header>
+
+<div class="mini-cart" id="miniCart">
+
+    <h2>Shopping Cart</h2>
+
+    <div id="cartItems">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <div class="cart-total">
+        Total: Rs. <span id="cartTotal">0</span>
+    </div>
+
+    <a href="checkout.html" class="checkout-btn">
+        CHECKOUT
+    </a>
+
+</div>
 
 
 <main>
@@ -373,35 +392,47 @@
 
 <div class="arrival-products">
 
-<a href="product.html" class="product-link">
 <div class="product-card">
 
-<div class="product-image">
-<img src="images/product1.jpg" alt="2 Piece Grip Suit">
-<span class="mini-bag">
-<i class="bi bi-bag-plus"></i>
-</span>
-</div>
+    <div class="product-image">
 
-<p>2 Piece Grip Suit- Embellished (Pret)</p>
-<h3>Rs. 11,990</h3>
+        <a href="product.html">
+            <img src="images/product1.jpg" alt="2 Piece Grip Suit">
+        </a>
+
+        <button type="button" class="mini-bag add-to-cart">
+            <i class="bi bi-bag-plus"></i>
+        </button>
+
+    </div>
+
+    <a href="product.html" class="product-link">
+        <p class="product-name">2 Piece Grip Suit- Embellished (Pret)</p>
+        <h3 class="product-price">Rs. 11,990</h3>
+    </a>
 
 </div>
 </a>
 
 
-<a href="product.html" class="product-link">
 <div class="product-card">
 
-<div class="product-image">
-<img src="images/product2.jpg" alt="2 Piece Silk Suit">
-<span class="mini-bag">
-<i class="bi bi-bag-plus"></i>
-</span>
-</div>
+    <div class="product-image">
 
-<p>2 Piece Silk Suit- Embroidered (Pret)</p>
-<h3>Rs. 12,990</h3>
+        <a href="product.html">
+            <img src="images/product2.jpg" alt="2 Piece Silk Suit">
+        </a>
+
+        <button type="button" class="mini-bag add-to-cart">
+            <i class="bi bi-bag-plus"></i>
+        </button>
+
+    </div>
+
+    <a href="product.html" class="product-link">
+        <p class="product-name">2 Piece Silk Suit- Embroidered (Pret)</p>
+        <h3 class="product-price">Rs. 12,990</h3>
+    </a>
 
 </div>
 </a>
@@ -506,5 +537,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<script src="script.js"></script>
 </body>
 </html>

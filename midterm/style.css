@@ -1207,3 +1207,82 @@ font-size: 10px;
 .checkout-link {
     color: white;
 }
+/* MIDTERM TASK 3 */
+
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+#cartCount {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: hsl(70, 70%, 45%);
+    color: white;
+    border-radius: 50%;
+    min-width: 18px;
+    height: 18px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini-cart {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    width: 350px;
+    background: white;
+    color: black;
+    padding: 20px;
+    z-index: 3000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.mini-cart.show-cart {
+    display: block;
+}
+
+.mini-cart h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item button {
+    border: none;
+    background: black;
+    color: white;
+    padding: 5px 8px;
+}
+
+.cart-total {
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.checkout-btn {
+    display: block;
+    background: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+}
+
+@media (max-width: 609px) {
+    .mini-cart {
+        width: 90%;
+        right: 5%;
+    }
+}
